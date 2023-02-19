@@ -1,0 +1,105 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.card,
+.card1 {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  margin: auto;
+  margin-top: 25vh;
+}
+
+.card img,
+.card1 img {
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+}
+.card .text,
+.card1 .text {
+  width: 50%;
+  padding: 35px;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+.card .title,
+.card1 .title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3.9px;
+  font-family: Montserrat;
+  font-variant: small-caps;
+  color: hsl(228, 12%, 48%);
+}
+.card h2,
+.card1 h2 {
+  font-weight: 700;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  color: hsl(212, 21%, 14%);
+}
+.card .description,
+.card1 .description {
+  color: hsl(228, 12%, 48%);
+  font-size: 15px;
+  font-family: montserrat;
+}
+.realprice {
+  font-size: 35px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.lastprice {
+  color: hsl(228, 12%, 48%);
+}
+.add {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+}
+.add:hover {
+  background-color: hsl(158, 37%, 24%);
+}
+svg {
+  padding: 10px;
+}
+.cart {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 990px) {
+  .card {
+    display: none;
+  }
+  .card1 {
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1 img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .card1 .text {
+    width: calc(100% - 60px);
+    padding: 0 30px 20px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 990px) {
+  .card1 {
+    display: none;
+  }
+}
